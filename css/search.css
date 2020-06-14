@@ -1,0 +1,94 @@
+:root {
+    --black-transp: rgba(0, 0, 0, 0.08);
+    --dark-violet: #322158;
+    --green: #34cb79;
+    --light-green: #a0e9c1;
+    --dark-green: #2fb86e;
+    --white: #ffffff;
+    --gray: #f0f0f5;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    background-color: var(--white);
+    top: 260px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#page-search {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+#page-search header {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-search header a {
+    color: var(--dark-violet);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#page-search header a span {
+    background-image: url('/assets/arrow-left.svg');
+    display: flex;
+    width: 20px;
+    height: 24px;
+    margin-right: 16px;
+
+}
+
+main {
+    margin: 48px;
+}
+
+h4 {
+    font-weight: normal;
+    margin-bottom: 32px;
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+main img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+main .card h1 {
+    margin: 32px 0;
+    font-size: 36px;
+    line-height: 41px;
+    color: #322153;
+}
+
+main .card h3 {
+    margin: 24px 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: #34cb79;
+}
+
+main .card p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6c6c80
+}

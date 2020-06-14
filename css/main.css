@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --black-transp: rgba(0, 0, 0, 0.08);
+    --dark-violet: #322158;
+    --green: #34cb79;
+    --dark-green: #2fb86e;
+    --white: #ffffff;
+    --background: #f0f0f5;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Ubuntu, sans-serif;
+    color: var(--dark-violet);
+}
