@@ -1,3 +1,29 @@
+@media (max-width: 400px) {
+    #page-create-point form {
+        padding: 20px;
+    }
+
+    #page-create-point header a {
+        visibility: hidden;
+    }
+
+    #page-create-point header a span {
+        visibility: visible;
+        position: absolute;
+        right: 8px;
+    }
+
+}
+
+@media (max-width: 570px) {
+
+    #page-create-point form legend,
+    h1 {
+        display: block;
+        text-align: center;
+    }
+}
+
 @media (max-width: 900px) {
     #page-home {
         background-position-x: 70vw;
@@ -21,6 +47,18 @@
 
     #page-search .cards {
         grid-template-columns: 1fr;
+    }
+
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field+.field {
+        margin-left: 0;
+    }
+
+    #page-create-point .items-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

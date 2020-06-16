@@ -1,27 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% set pageId = "page-search" %}
+
+{% block titke %}    
     <title>Ecoleta - Resultado da Pesquisa</title>
-    <link rel="stylesheet" href="css/main.css">
+{% endblock titke %}
+
+{% block styles %}
     <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/responsive.css">
+{% endblock styles %}
 
+{% block content %}
 
-</head>
+    {% include "partials/page-header.html" %}
 
-<body>
-
-    <div id="page-search">
-
-        <header>
-            <img src="./assets/logo.svg" alt="Logomarca">
-            <a href="/index.html"><span></span>Voltar para Home</a>
-        </header>
-
-        <main>
+    <main>
             <h4>
                 <strong>2 pontos</strong> encontrados!
             </h4>
@@ -48,7 +42,9 @@
                     </p>
                 </div>
             </div>
-        </main>
-</body>
+    </main>
 
-</html>
+{% endblock content %}
+
+
+
